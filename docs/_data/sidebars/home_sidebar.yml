@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: core
-      url: core.html
+      url: /core
     output: web
     title: choicenet
   output: web

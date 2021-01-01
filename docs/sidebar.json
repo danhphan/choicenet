@@ -1,6 +1,6 @@
 {
   "choicenet": {
     "Overview": "/",
-    "core": "core.html"
+    "core": "/core"
   }
 }
