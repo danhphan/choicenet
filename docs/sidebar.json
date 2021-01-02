@@ -1,6 +1,7 @@
 {
   "choicenet": {
     "Overview": "/",
-    "core": "/core"
+    "core": "/core",
+    "tastenet_mnl": "/tastenet_mnl"
   }
 }

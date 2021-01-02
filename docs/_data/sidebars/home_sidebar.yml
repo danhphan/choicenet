@@ -12,6 +12,9 @@ entries:
     - output: web,pdf
       title: core
       url: /core
+    - output: web,pdf
+      title: tastenet_mnl
+      url: /tastenet_mnl
     output: web
     title: choicenet
   output: web

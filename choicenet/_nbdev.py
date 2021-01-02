@@ -2,9 +2,14 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"say_hello": "00_core.ipynb"}
+index = {"say_hello": "01_tastenet_mnl.ipynb",
+         "get_act": "01_tastenet_mnl.ipynb",
+         "ChoiceFlex": "01_tastenet_mnl.ipynb",
+         "Utility": "01_tastenet_mnl.ipynb",
+         "TasteParams": "01_tastenet_mnl.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "tastenet_mnl.py"]
 
 doc_url = "https://danhphan.github.io/choicenet/"
 
