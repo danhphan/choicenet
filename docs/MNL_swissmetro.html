@@ -71,7 +71,7 @@ nb_path: "02_MNL_swissmetro.ipynb"
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(10728, 28)</pre>
+<pre>(10692, 28)</pre>
 </div>
 
 </div>
@@ -120,6 +120,186 @@ nb_path: "02_MNL_swissmetro.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GROUP</th>
+      <th>SURVEY</th>
+      <th>SP</th>
+      <th>ID</th>
+      <th>PURPOSE</th>
+      <th>FIRST</th>
+      <th>TICKET</th>
+      <th>WHO</th>
+      <th>LUGGAGE</th>
+      <th>AGE</th>
+      <th>...</th>
+      <th>TRAIN_TT</th>
+      <th>TRAIN_CO</th>
+      <th>TRAIN_HE</th>
+      <th>SM_TT</th>
+      <th>SM_CO</th>
+      <th>SM_HE</th>
+      <th>SM_SEATS</th>
+      <th>CAR_TT</th>
+      <th>CAR_CO</th>
+      <th>CHOICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>112</td>
+      <td>48</td>
+      <td>120</td>
+      <td>63</td>
+      <td>52</td>
+      <td>20</td>
+      <td>0</td>
+      <td>117</td>
+      <td>65</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>103</td>
+      <td>48</td>
+      <td>30</td>
+      <td>60</td>
+      <td>49</td>
+      <td>10</td>
+      <td>0</td>
+      <td>117</td>
+      <td>84</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>130</td>
+      <td>48</td>
+      <td>60</td>
+      <td>67</td>
+      <td>58</td>
+      <td>30</td>
+      <td>0</td>
+      <td>117</td>
+      <td>52</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>103</td>
+      <td>40</td>
+      <td>30</td>
+      <td>63</td>
+      <td>52</td>
+      <td>20</td>
+      <td>0</td>
+      <td>72</td>
+      <td>52</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>130</td>
+      <td>36</td>
+      <td>60</td>
+      <td>63</td>
+      <td>42</td>
+      <td>20</td>
+      <td>0</td>
+      <td>90</td>
+      <td>84</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 28 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -129,13 +309,6 @@ nb_path: "02_MNL_swissmetro.ipynb"
 </div>
 </div>
 </div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -476,11 +649,11 @@ Name: Value, dtype: float64</pre>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Log likelihood for 1711 validation data: -1371.5220617101586
-Log likelihood for 1711 validation data: -1429.9391675628603
-Log likelihood for 1711 validation data: -1393.0681802412114
-Log likelihood for 1711 validation data: -1388.2437332222553
-Log likelihood for 1710 validation data: -1361.203086036041
+<pre>Log likelihood for 2139 validation data: -1725.6245127576863
+Log likelihood for 2139 validation data: -1757.9792027381814
+Log likelihood for 2138 validation data: -1708.3622443500494
+Log likelihood for 2138 validation data: -1739.8047807640314
+Log likelihood for 2138 validation data: -1716.1084410042763
 </pre>
 </div>
 </div>
@@ -651,8 +824,8 @@ Log likelihood for 1710 validation data: -1361.203086036041
 <div class="output_text output_subarea output_execute_result">
 <pre>(pandas.core.frame.DataFrame,
  pandas.core.frame.DataFrame,
- (6844, 28),
- (1710, 28))</pre>
+ (8554, 28),
+ (2138, 28))</pre>
 </div>
 
 </div>
@@ -864,7 +1037,7 @@ Log likelihood for 1710 validation data: -1361.203086036041
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(pandas.core.frame.DataFrame, (1710, 1))</pre>
+<pre>(pandas.core.frame.DataFrame, (2138, 1))</pre>
 </div>
 
 </div>
@@ -897,7 +1070,7 @@ Log likelihood for 1710 validation data: -1361.203086036041
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;biogeme.results.bioResults at 0x7fc54eff1040&gt;</pre>
+<pre>&lt;biogeme.results.bioResults at 0x7f6feceff1f0&gt;</pre>
 </div>
 
 </div>

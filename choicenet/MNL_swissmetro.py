@@ -3,11 +3,8 @@
 __all__ = []
 
 # Cell
-import pandas as pd
-import numpy as np
 import pickle
-
-# Cell
+import numpy as np
 import pandas as pd
 import biogeme.database as db
 import biogeme.biogeme as bio
