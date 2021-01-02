@@ -1,7 +1,7 @@
-repository: danhphan/nbdev_template
+repository: danhphan/choicenet
 output: web
-topnav_title: nbdev_template
-site_title: nbdev_template
+topnav_title: ChoiceNet
+site_title: ChoiceNet
 company_name: Danh Phan
 description: A library that incoporate discrete choice and deep learning
 # Set to false to disable KaTeX math
