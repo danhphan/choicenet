@@ -2,14 +2,15 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"say_hello": "10_tastenet_mnl.ipynb",
+index = {"MNL": "03_pytorch_MNL.ipynb",
+         "load_model": "03_pytorch_MNL.ipynb",
+         "build_model": "03_pytorch_MNL.ipynb",
          "get_act": "10_tastenet_mnl.ipynb",
          "ChoiceFlex": "10_tastenet_mnl.ipynb",
          "Utility": "10_tastenet_mnl.ipynb",
          "TasteParams": "10_tastenet_mnl.ipynb"}
 
-modules = ["core.py",
-           "statsmodels_MNL.py",
+modules = ["statsmodels_MNL.py",
            "pytorch_MNL.py",
            "pytorch_discrete_choice.py",
            "tastenet_mnl.py"]

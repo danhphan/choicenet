@@ -10,22 +10,22 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: core
-      url: /core
+      title: MNL with Statsmodels
+      url: /statsmodels_MNL
     - output: web,pdf
-      title: statsmodels_MNL
-      url: /statsmodels_MNL_swissmetro
-    - output: web,pdf
-      title: statsmodels_intro
+      title: Statsmodels introduction
       url: /statsmodels_intro
     - output: web,pdf
-      title: pytorch_MNL
+      title: MNL with Swissmetro dataset
+      url: /MNL_swissmetro
+    - output: web,pdf
+      title: MNL with Pytorch
       url: /pytorch_MNL
     - output: web,pdf
-      title: pytorch_discrete_choice
+      title: Discrete choice using pytorch
       url: /pytorch_discrete_choice
     - output: web,pdf
-      title: tastenet_mnl
+      title: Exploring Tastenet MNL
       url: /tastenet_mnl
     output: web
     title: choicenet

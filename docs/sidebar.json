@@ -1,11 +1,11 @@
 {
   "choicenet": {
     "Overview": "/",
-    "core": "/core",
-    "statsmodels_MNL": "/statsmodels_MNL_swissmetro",
-    "statsmodels_intro": "/statsmodels_intro",
-    "pytorch_MNL": "/pytorch_MNL",
-    "pytorch_discrete_choice": "/pytorch_discrete_choice",
-    "tastenet_mnl": "/tastenet_mnl"
+    "MNL with Statsmodels": "/statsmodels_MNL",
+    "Statsmodels introduction": "/statsmodels_intro",
+    "MNL with Swissmetro dataset": "/MNL_swissmetro",
+    "MNL with Pytorch": "/pytorch_MNL",
+    "Discrete choice using pytorch": "/pytorch_discrete_choice",
+    "Exploring Tastenet MNL": "/tastenet_mnl"
   }
 }
