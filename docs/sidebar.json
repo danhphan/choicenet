@@ -2,6 +2,10 @@
   "choicenet": {
     "Overview": "/",
     "core": "/core",
+    "statsmodels_MNL": "/statsmodels_MNL_swissmetro",
+    "statsmodels_intro": "/statsmodels_intro",
+    "pytorch_MNL": "/pytorch_MNL",
+    "pytorch_discrete_choice": "/pytorch_discrete_choice",
     "tastenet_mnl": "/tastenet_mnl"
   }
 }

@@ -13,6 +13,18 @@ entries:
       title: core
       url: /core
     - output: web,pdf
+      title: statsmodels_MNL
+      url: /statsmodels_MNL_swissmetro
+    - output: web,pdf
+      title: statsmodels_intro
+      url: /statsmodels_intro
+    - output: web,pdf
+      title: pytorch_MNL
+      url: /pytorch_MNL
+    - output: web,pdf
+      title: pytorch_discrete_choice
+      url: /pytorch_discrete_choice
+    - output: web,pdf
       title: tastenet_mnl
       url: /tastenet_mnl
     output: web
