@@ -5,12 +5,18 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"MNL": "03_pytorch_MNL.ipynb",
          "load_model": "03_pytorch_MNL.ipynb",
          "build_model": "03_pytorch_MNL.ipynb",
+         "log_loss": "03_pytorch_discrete_choice.ipynb",
          "get_act": "10_tastenet_mnl.ipynb",
          "ChoiceFlex": "10_tastenet_mnl.ipynb",
          "Utility": "10_tastenet_mnl.ipynb",
-         "TasteParams": "10_tastenet_mnl.ipynb"}
+         "TasteParams": "10_tastenet_mnl.ipynb",
+         "ChoiceDataset": "10_tastenet_mnl.ipynb",
+         "getAttribute": "10_tastenet_mnl.ipynb",
+         "selectZ": "10_tastenet_mnl.ipynb"}
 
 modules = ["statsmodels_MNL.py",
+           "statsmodels_intro.py",
+           "MNL_swissmetro.py",
            "pytorch_MNL.py",
            "pytorch_discrete_choice.py",
            "tastenet_mnl.py"]
