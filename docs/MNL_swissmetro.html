@@ -303,6 +303,275 @@ nb_path: "02_MNL_swissmetro.ipynb"
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GROUP</th>
+      <th>SURVEY</th>
+      <th>SP</th>
+      <th>ID</th>
+      <th>PURPOSE</th>
+      <th>FIRST</th>
+      <th>TICKET</th>
+      <th>WHO</th>
+      <th>LUGGAGE</th>
+      <th>AGE</th>
+      <th>...</th>
+      <th>TRAIN_TT</th>
+      <th>TRAIN_CO</th>
+      <th>TRAIN_HE</th>
+      <th>SM_TT</th>
+      <th>SM_CO</th>
+      <th>SM_HE</th>
+      <th>SM_SEATS</th>
+      <th>CAR_TT</th>
+      <th>CAR_CO</th>
+      <th>CHOICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.0</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>...</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+      <td>10692.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.632155</td>
+      <td>0.632155</td>
+      <td>1.0</td>
+      <td>597.389731</td>
+      <td>2.904882</td>
+      <td>0.471380</td>
+      <td>2.882155</td>
+      <td>1.494949</td>
+      <td>0.677609</td>
+      <td>2.898148</td>
+      <td>...</td>
+      <td>166.872334</td>
+      <td>512.373831</td>
+      <td>70.117845</td>
+      <td>87.562477</td>
+      <td>667.992237</td>
+      <td>20.019641</td>
+      <td>0.117752</td>
+      <td>124.055462</td>
+      <td>78.944912</td>
+      <td>2.155911</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.482241</td>
+      <td>0.482241</td>
+      <td>0.0</td>
+      <td>344.294347</td>
+      <td>1.121564</td>
+      <td>0.499204</td>
+      <td>2.182350</td>
+      <td>0.708905</td>
+      <td>0.604114</td>
+      <td>1.027727</td>
+      <td>...</td>
+      <td>77.357630</td>
+      <td>1084.703812</td>
+      <td>37.433883</td>
+      <td>53.610080</td>
+      <td>1436.999113</td>
+      <td>8.161314</td>
+      <td>0.322329</td>
+      <td>88.702044</td>
+      <td>55.230211</td>
+      <td>0.629245</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>...</td>
+      <td>31.000000</td>
+      <td>8.000000</td>
+      <td>30.000000</td>
+      <td>8.000000</td>
+      <td>10.000000</td>
+      <td>10.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>299.750000</td>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>...</td>
+      <td>110.000000</td>
+      <td>58.000000</td>
+      <td>30.000000</td>
+      <td>55.000000</td>
+      <td>70.000000</td>
+      <td>10.000000</td>
+      <td>0.000000</td>
+      <td>70.000000</td>
+      <td>40.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>598.500000</td>
+      <td>3.000000</td>
+      <td>0.000000</td>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>...</td>
+      <td>158.000000</td>
+      <td>94.000000</td>
+      <td>60.000000</td>
+      <td>79.000000</td>
+      <td>111.000000</td>
+      <td>20.000000</td>
+      <td>0.000000</td>
+      <td>120.000000</td>
+      <td>76.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>895.250000</td>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>2.000000</td>
+      <td>1.000000</td>
+      <td>4.000000</td>
+      <td>...</td>
+      <td>209.000000</td>
+      <td>170.000000</td>
+      <td>120.000000</td>
+      <td>110.000000</td>
+      <td>209.000000</td>
+      <td>30.000000</td>
+      <td>0.000000</td>
+      <td>176.000000</td>
+      <td>112.000000</td>
+      <td>3.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>1192.000000</td>
+      <td>8.000000</td>
+      <td>1.000000</td>
+      <td>10.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>5.000000</td>
+      <td>...</td>
+      <td>1049.000000</td>
+      <td>5040.000000</td>
+      <td>120.000000</td>
+      <td>796.000000</td>
+      <td>6720.000000</td>
+      <td>30.000000</td>
+      <td>1.000000</td>
+      <td>1560.000000</td>
+      <td>520.000000</td>
+      <td>3.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 28 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Biogeme">Biogeme<a class="anchor-link" href="#Biogeme"> </a></h3>
@@ -390,14 +659,315 @@ nb_path: "02_MNL_swissmetro.ipynb"
 <span class="c1"># database.remove(exclude)</span>
 
 <span class="c1"># Parameters to be estimated</span>
-<span class="n">ASC_CAR</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;ASC_CAR&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1"># ASC_CAR = Beta(&#39;ASC_CAR&#39;, 0, None, None, 0)</span>
+<span class="c1"># ASC_TRAIN = Beta(&#39;ASC_TRAIN&#39;, 0, None, None, 0)</span>
+<span class="c1"># ASC_SM = Beta(&#39;ASC_SM&#39;, 0, None, None, 1)</span>
+<span class="c1"># B_TIME = Beta(&#39;B_TIME&#39;, 0, None, None, 0)</span>
+<span class="c1"># B_COST = Beta(&#39;B_COST&#39;, 0, None, None, 0)</span>
+
+
 <span class="n">ASC_TRAIN</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;ASC_TRAIN&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">ASC_SM</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;ASC_SM&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">B_TIME</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_TIME&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">B_COST</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_COST&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">ASC_SM</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;ASC_SM&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">ASC_CAR</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;ASC_CAR&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Constant</span>
+
+<span class="n">B_TIME_TRAIN</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_TIME_TRAIN&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">B_TIME_SM</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_TIME_SM&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">B_TIME_CAR</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_TIME_CAR&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">B_HEADWAY_TRAIN</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_HEADWAY_TRAIN&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">B_HEADWAY_SM</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_HEADWAY_SM&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+
+<span class="n">B_COST_TRAIN</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_COST_TRAIN&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Constant</span>
+<span class="n">B_COST_SM</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_COST_SM&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Constant</span>
+<span class="n">B_COST_CAR</span> <span class="o">=</span> <span class="n">Beta</span><span class="p">(</span><span class="s1">&#39;B_COST_CAR&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Constant</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>GROUP</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>SURVEY</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>SP</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>PURPOSE</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>FIRST</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>TICKET</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>WHO</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>LUGGAGE</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>AGE</th>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>MALE</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>INCOME</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>GA</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>ORIGIN</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>DEST</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>TRAIN_AV</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>CAR_AV</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>SM_AV</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>TRAIN_TT</th>
+      <td>112</td>
+      <td>103</td>
+      <td>130</td>
+      <td>103</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <th>TRAIN_CO</th>
+      <td>48</td>
+      <td>48</td>
+      <td>48</td>
+      <td>40</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>TRAIN_HE</th>
+      <td>120</td>
+      <td>30</td>
+      <td>60</td>
+      <td>30</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>SM_TT</th>
+      <td>63</td>
+      <td>60</td>
+      <td>67</td>
+      <td>63</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>SM_CO</th>
+      <td>52</td>
+      <td>49</td>
+      <td>58</td>
+      <td>52</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <th>SM_HE</th>
+      <td>20</td>
+      <td>10</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>SM_SEATS</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>CAR_TT</th>
+      <td>117</td>
+      <td>117</td>
+      <td>117</td>
+      <td>72</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th>CAR_CO</th>
+      <td>65</td>
+      <td>84</td>
+      <td>52</td>
+      <td>52</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <th>CHOICE</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -413,14 +983,21 @@ nb_path: "02_MNL_swissmetro.ipynb"
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SM_COST</span> <span class="o">=</span> <span class="n">SM_CO</span> <span class="o">*</span> <span class="p">(</span><span class="n">GA</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">TRAIN_COST</span> <span class="o">=</span> <span class="n">TRAIN_CO</span> <span class="o">*</span> <span class="p">(</span><span class="n">GA</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+
 <span class="n">CAR_AV_SP</span> <span class="o">=</span> <span class="n">CAR_AV</span> <span class="o">*</span> <span class="p">(</span><span class="n">SP</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">TRAIN_AV_SP</span> <span class="o">=</span> <span class="n">TRAIN_AV</span> <span class="o">*</span> <span class="p">(</span><span class="n">SP</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">TRAIN_TT_SCALED</span> <span class="o">=</span> <span class="n">TRAIN_TT</span> <span class="o">/</span> <span class="mf">100.0</span>
-<span class="n">TRAIN_COST_SCALED</span> <span class="o">=</span> <span class="n">TRAIN_COST</span> <span class="o">/</span> <span class="mi">100</span>
-<span class="n">SM_TT_SCALED</span> <span class="o">=</span> <span class="n">SM_TT</span> <span class="o">/</span> <span class="mf">100.0</span>
-<span class="n">SM_COST_SCALED</span> <span class="o">=</span> <span class="n">SM_COST</span> <span class="o">/</span> <span class="mi">100</span>
-<span class="n">CAR_TT_SCALED</span> <span class="o">=</span> <span class="n">CAR_TT</span> <span class="o">/</span> <span class="mi">100</span>
-<span class="n">CAR_CO_SCALED</span> <span class="o">=</span> <span class="n">CAR_CO</span> <span class="o">/</span> <span class="mi">100</span>
+
+<span class="n">TRAIN_TT_SCALED</span> <span class="o">=</span> <span class="n">TRAIN_TT</span> <span class="c1"># / 100.0</span>
+<span class="n">TRAIN_COST_SCALED</span> <span class="o">=</span> <span class="n">TRAIN_COST</span> <span class="c1"># / 100</span>
+
+<span class="n">SM_TT_SCALED</span> <span class="o">=</span> <span class="n">SM_TT</span> <span class="c1"># / 100.0</span>
+<span class="n">SM_COST_SCALED</span> <span class="o">=</span> <span class="n">SM_COST</span> <span class="c1"># / 100</span>
+
+<span class="n">CAR_TT_SCALED</span> <span class="o">=</span> <span class="n">CAR_TT</span> <span class="c1"># / 100</span>
+<span class="n">CAR_CO_SCALED</span> <span class="o">=</span> <span class="n">CAR_CO</span> <span class="c1"># / 100</span>
+
+<span class="n">TRAIN_HEADWAY</span> <span class="o">=</span> <span class="n">TRAIN_HE</span>
+<span class="n">SM_HEADWAY</span> <span class="o">=</span> <span class="n">SM_HE</span>
 </pre></div>
 
     </div>
@@ -437,15 +1014,19 @@ nb_path: "02_MNL_swissmetro.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">V1</span> <span class="o">=</span> <span class="n">ASC_TRAIN</span> <span class="o">+</span> \
-     <span class="n">B_TIME</span> <span class="o">*</span> <span class="n">TRAIN_TT_SCALED</span> <span class="o">+</span> \
-     <span class="n">B_COST</span> <span class="o">*</span> <span class="n">TRAIN_COST_SCALED</span>
-<span class="n">V2</span> <span class="o">=</span> <span class="n">ASC_SM</span> <span class="o">+</span> \
-     <span class="n">B_TIME</span> <span class="o">*</span> <span class="n">SM_TT_SCALED</span> <span class="o">+</span> \
-     <span class="n">B_COST</span> <span class="o">*</span> <span class="n">SM_COST_SCALED</span>
-<span class="n">V3</span> <span class="o">=</span> <span class="n">ASC_CAR</span> <span class="o">+</span> \
-     <span class="n">B_TIME</span> <span class="o">*</span> <span class="n">CAR_TT_SCALED</span> <span class="o">+</span> \
-     <span class="n">B_COST</span> <span class="o">*</span> <span class="n">CAR_CO_SCALED</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V1 = ASC_TRAIN + \</span>
+<span class="c1">#      B_TIME * TRAIN_TT_SCALED + \</span>
+<span class="c1">#      B_COST * TRAIN_COST_SCALED</span>
+<span class="c1"># V2 = ASC_SM + \</span>
+<span class="c1">#      B_TIME * SM_TT_SCALED + \</span>
+<span class="c1">#      B_COST * SM_COST_SCALED</span>
+<span class="c1"># V3 = ASC_CAR + \</span>
+<span class="c1">#      B_TIME * CAR_TT_SCALED + \</span>
+<span class="c1">#      B_COST * CAR_CO_SCALED</span>
+
+<span class="n">V1</span> <span class="o">=</span> <span class="n">ASC_TRAIN</span> <span class="o">+</span> <span class="n">B_TIME_TRAIN</span> <span class="o">*</span> <span class="n">TRAIN_TT_SCALED</span> <span class="o">+</span> <span class="n">B_HEADWAY_TRAIN</span> <span class="o">*</span> <span class="n">TRAIN_HEADWAY</span> <span class="o">+</span>  <span class="n">B_COST_TRAIN</span> <span class="o">*</span> <span class="n">TRAIN_COST_SCALED</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="n">ASC_SM</span> <span class="o">+</span> <span class="n">B_TIME_SM</span> <span class="o">*</span> <span class="n">SM_TT_SCALED</span> <span class="o">+</span> <span class="n">B_HEADWAY_SM</span> <span class="o">*</span> <span class="n">SM_HEADWAY</span> <span class="o">+</span> <span class="n">B_COST_SM</span> <span class="o">*</span> <span class="n">SM_COST_SCALED</span>
+<span class="n">V3</span> <span class="o">=</span> <span class="n">ASC_CAR</span> <span class="o">+</span> <span class="n">B_TIME_CAR</span> <span class="o">*</span> <span class="n">CAR_TT_SCALED</span> <span class="o">+</span> <span class="n">B_COST_CAR</span> <span class="o">*</span> <span class="n">CAR_CO_SCALED</span>
 </pre></div>
 
     </div>
@@ -526,17 +1107,23 @@ nb_path: "02_MNL_swissmetro.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>              Value   Std err     t-test   p-value  Rob. Std err  Rob. t-test  \
-ASC_CAR    0.016930  0.031410   0.538992  0.589892      0.037120     0.456079   
-ASC_TRAIN -0.656391  0.041921 -15.657964  0.000000      0.054510   -12.041692   
-B_COST    -0.789108  0.036321 -21.725702  0.000000      0.050931   -15.493548   
-B_TIME    -1.277293  0.042630 -29.962201  0.000000      0.065605   -19.469462   
+<pre>                     Value   Std err      t-test   p-value  Rob. Std err  \
+ASC_SM           10.245328  0.359568   28.493448  0.000000      2.509918   
+ASC_TRAIN        15.924598  0.362314   43.952501  0.000000      2.297327   
+B_HEADWAY_SM     -0.029013  0.008656   -3.351612  0.000803      0.036859   
+B_HEADWAY_TRAIN  -0.026052  0.002021  -12.890181  0.000000      0.006544   
+B_TIME_CAR       -0.362414  0.002659 -136.293717  0.000000      0.025532   
+B_TIME_SM        -0.370810  0.002607 -142.248203  0.000000      0.021140   
+B_TIME_TRAIN     -0.366817  0.002053 -178.657575  0.000000      0.014611   
 
-           Rob. p-value  
-ASC_CAR        0.648333  
-ASC_TRAIN      0.000000  
-B_COST         0.000000  
-B_TIME         0.000000  
+                 Rob. t-test  Rob. p-value  
+ASC_SM              4.081937  4.466190e-05  
+ASC_TRAIN           6.931795  4.155343e-12  
+B_HEADWAY_SM       -0.787136  4.312021e-01  
+B_HEADWAY_TRAIN    -3.981048  6.861223e-05  
+B_TIME_CAR        -14.194336  0.000000e+00  
+B_TIME_SM         -17.540794  0.000000e+00  
+B_TIME_TRAIN      -25.105441  0.000000e+00  
 </pre>
 </div>
 </div>
@@ -649,11 +1236,11 @@ Name: Value, dtype: float64</pre>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Log likelihood for 2139 validation data: -1725.6245127576863
-Log likelihood for 2139 validation data: -1757.9792027381814
-Log likelihood for 2138 validation data: -1708.3622443500494
-Log likelihood for 2138 validation data: -1739.8047807640314
-Log likelihood for 2138 validation data: -1716.1084410042763
+<pre>Log likelihood for 2139 validation data: -1715.400412298387
+Log likelihood for 2139 validation data: -1708.8918801394407
+Log likelihood for 2138 validation data: -1760.8655293556678
+Log likelihood for 2138 validation data: -1723.267796297537
+Log likelihood for 2138 validation data: -1739.4535618147806
 </pre>
 </div>
 </div>
@@ -843,72 +1430,6 @@ Log likelihood for 2138 validation data: -1716.1084410042763
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1711</span><span class="o">*</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">1710</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>8554</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">6844</span> <span class="o">+</span> <span class="mi">1710</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>8554</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">keepDatabase</span> <span class="o">=</span> <span class="n">database</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">keepDatabase</span><span class="p">)</span>
 </pre></div>
@@ -1070,7 +1591,7 @@ Log likelihood for 2138 validation data: -1716.1084410042763
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;biogeme.results.bioResults at 0x7f6feceff1f0&gt;</pre>
+<pre>&lt;biogeme.results.bioResults at 0x7f190c932e80&gt;</pre>
 </div>
 
 </div>
@@ -1090,6 +1611,2041 @@ Log likelihood for 2138 validation data: -1716.1084410042763
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;./data/swissmetro.dat&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(10728, 28)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">include_criteria</span> <span class="o">=</span> <span class="p">(</span><span class="n">wide_sm</span><span class="o">.</span><span class="n">PURPOSE</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">&amp;</span> 
+                   <span class="p">(</span><span class="n">wide_sm</span><span class="o">.</span><span class="n">CHOICE</span> <span class="o">!=</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">wide_sm</span> <span class="o">=</span> <span class="n">wide_sm</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">include_criteria</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(6768, 28)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GROUP</th>
+      <th>SURVEY</th>
+      <th>SP</th>
+      <th>ID</th>
+      <th>PURPOSE</th>
+      <th>FIRST</th>
+      <th>TICKET</th>
+      <th>WHO</th>
+      <th>LUGGAGE</th>
+      <th>AGE</th>
+      <th>...</th>
+      <th>TRAIN_TT</th>
+      <th>TRAIN_CO</th>
+      <th>TRAIN_HE</th>
+      <th>SM_TT</th>
+      <th>SM_CO</th>
+      <th>SM_HE</th>
+      <th>SM_SEATS</th>
+      <th>CAR_TT</th>
+      <th>CAR_CO</th>
+      <th>CHOICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>112</td>
+      <td>48</td>
+      <td>120</td>
+      <td>63</td>
+      <td>52</td>
+      <td>20</td>
+      <td>0</td>
+      <td>117</td>
+      <td>65</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>103</td>
+      <td>48</td>
+      <td>30</td>
+      <td>60</td>
+      <td>49</td>
+      <td>10</td>
+      <td>0</td>
+      <td>117</td>
+      <td>84</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>130</td>
+      <td>48</td>
+      <td>60</td>
+      <td>67</td>
+      <td>58</td>
+      <td>30</td>
+      <td>0</td>
+      <td>117</td>
+      <td>52</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>103</td>
+      <td>40</td>
+      <td>30</td>
+      <td>63</td>
+      <td>52</td>
+      <td>20</td>
+      <td>0</td>
+      <td>72</td>
+      <td>52</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>...</td>
+      <td>130</td>
+      <td>36</td>
+      <td>60</td>
+      <td>63</td>
+      <td>42</td>
+      <td>20</td>
+      <td>0</td>
+      <td>90</td>
+      <td>84</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 28 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Convert-Wide-to-Long-format">Convert Wide to Long format<a class="anchor-link" href="#Convert-Wide-to-Long-format"> </a></h4>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span><span class="o">.</span><span class="n">ID</span><span class="o">.</span><span class="n">nunique</span><span class="p">(),</span> <span class="n">wide_sm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">wide_sm</span><span class="o">.</span><span class="n">ID</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(752, 9.0)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span><span class="p">[</span><span class="n">wide_sm</span><span class="o">.</span><span class="n">ID</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">2</span><span class="p">])]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>15</th>
+      <th>16</th>
+      <th>17</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>GROUP</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>SURVEY</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>SP</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>PURPOSE</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>FIRST</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>TICKET</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>WHO</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>LUGGAGE</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>AGE</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>MALE</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>INCOME</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>GA</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>ORIGIN</th>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>DEST</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>TRAIN_AV</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>CAR_AV</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>SM_AV</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>TRAIN_TT</th>
+      <td>184</td>
+      <td>170</td>
+      <td>213</td>
+      <td>170</td>
+      <td>213</td>
+      <td>184</td>
+      <td>170</td>
+      <td>170</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <th>TRAIN_CO</th>
+      <td>62</td>
+      <td>62</td>
+      <td>62</td>
+      <td>52</td>
+      <td>47</td>
+      <td>47</td>
+      <td>62</td>
+      <td>47</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>TRAIN_HE</th>
+      <td>120</td>
+      <td>30</td>
+      <td>60</td>
+      <td>30</td>
+      <td>60</td>
+      <td>120</td>
+      <td>120</td>
+      <td>30</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>SM_TT</th>
+      <td>76</td>
+      <td>70</td>
+      <td>84</td>
+      <td>76</td>
+      <td>76</td>
+      <td>70</td>
+      <td>84</td>
+      <td>84</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>SM_CO</th>
+      <td>70</td>
+      <td>66</td>
+      <td>82</td>
+      <td>72</td>
+      <td>53</td>
+      <td>66</td>
+      <td>82</td>
+      <td>57</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>SM_HE</th>
+      <td>20</td>
+      <td>10</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+      <td>10</td>
+      <td>10</td>
+      <td>30</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>SM_SEATS</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>CAR_TT</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>CAR_CO</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>CHOICE</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wide_sm</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;GROUP&#39;, &#39;SURVEY&#39;, &#39;SP&#39;, &#39;ID&#39;, &#39;PURPOSE&#39;, &#39;FIRST&#39;, &#39;TICKET&#39;, &#39;WHO&#39;,
+       &#39;LUGGAGE&#39;, &#39;AGE&#39;, &#39;MALE&#39;, &#39;INCOME&#39;, &#39;GA&#39;, &#39;ORIGIN&#39;, &#39;DEST&#39;, &#39;TRAIN_AV&#39;,
+       &#39;CAR_AV&#39;, &#39;SM_AV&#39;, &#39;TRAIN_TT&#39;, &#39;TRAIN_CO&#39;, &#39;TRAIN_HE&#39;, &#39;SM_TT&#39;, &#39;SM_CO&#39;,
+       &#39;SM_HE&#39;, &#39;SM_SEATS&#39;, &#39;CAR_TT&#39;, &#39;CAR_CO&#39;, &#39;CHOICE&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create the list of individual specific variables</span>
+<span class="n">ind_variables</span> <span class="o">=</span> <span class="n">wide_sm</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[:</span><span class="mi">15</span><span class="p">]</span>
+<span class="n">availability_variables</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;TRAIN_AV&#39;</span><span class="p">,</span>
+                          <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;SM_AV&#39;</span><span class="p">,</span>
+                          <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;CAR_AV&#39;</span><span class="p">}</span>
+<span class="c1"># Alternative variables</span>
+<span class="n">alt_varying_variables</span> <span class="o">=</span> <span class="p">{</span><span class="sa">u</span><span class="s1">&#39;travel_time&#39;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;TRAIN_TT&#39;</span><span class="p">),</span>
+                                               <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;SM_TT&#39;</span><span class="p">),</span>
+                                               <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;CAR_TT&#39;</span><span class="p">)]),</span>
+                         <span class="sa">u</span><span class="s1">&#39;travel_cost&#39;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;TRAIN_CO&#39;</span><span class="p">),</span>
+                                               <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;SM_CO&#39;</span><span class="p">),</span>
+                                               <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;CAR_CO&#39;</span><span class="p">)]),</span>
+                         <span class="sa">u</span><span class="s1">&#39;headway&#39;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;TRAIN_HE&#39;</span><span class="p">),</span>
+                                           <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;SM_HE&#39;</span><span class="p">)]),</span>
+                         <span class="sa">u</span><span class="s1">&#39;seat_configuration&#39;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">([(</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;SM_SEATS&quot;</span><span class="p">)])}</span>
+<span class="n">alt_varying_variables</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;travel_time&#39;: {1: &#39;TRAIN_TT&#39;, 2: &#39;SM_TT&#39;, 3: &#39;CAR_TT&#39;},
+ &#39;travel_cost&#39;: {1: &#39;TRAIN_CO&#39;, 2: &#39;SM_CO&#39;, 3: &#39;CAR_CO&#39;},
+ &#39;headway&#39;: {1: &#39;TRAIN_HE&#39;, 2: &#39;SM_HE&#39;},
+ &#39;seat_configuration&#39;: {2: &#39;SM_SEATS&#39;}}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">custom_alt_id</span> <span class="o">=</span> <span class="s2">&quot;mode_id&quot;</span>
+<span class="c1"># Create a custon id column</span>
+<span class="n">obs_id_column</span> <span class="o">=</span> <span class="s2">&quot;custom_id&quot;</span>
+<span class="n">wide_sm</span><span class="p">[</span><span class="n">obs_id_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">wide_sm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">choice_column</span> <span class="o">=</span> <span class="s2">&quot;CHOICE&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_sm</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">convert_wide_to_long</span><span class="p">(</span><span class="n">wide_sm</span><span class="p">,</span>
+                                  <span class="n">ind_variables</span><span class="p">,</span>
+                                  <span class="n">alt_varying_variables</span><span class="p">,</span>
+                                  <span class="n">availability_variables</span><span class="p">,</span>
+                                  <span class="n">obs_id_column</span><span class="p">,</span>
+                                  <span class="n">choice_column</span><span class="p">,</span>
+                                  <span class="n">new_alt_id_name</span><span class="o">=</span><span class="n">custom_alt_id</span>
+                                  <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_sm</span><span class="o">.</span><span class="n">CHOICE</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(),</span> <span class="n">long_sm</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(0    12375
+ 1     6768
+ Name: CHOICE, dtype: int64,
+ (19143, 22))</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_sm</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>custom_id</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>mode_id</th>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>CHOICE</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>GROUP</th>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>SURVEY</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>SP</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>PURPOSE</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>FIRST</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>TICKET</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>WHO</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>LUGGAGE</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>AGE</th>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>MALE</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>INCOME</th>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>GA</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>ORIGIN</th>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>DEST</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>travel_time</th>
+      <td>112.0</td>
+      <td>63.0</td>
+      <td>117.0</td>
+      <td>103.0</td>
+      <td>60.0</td>
+      <td>117.0</td>
+      <td>130.0</td>
+      <td>67.0</td>
+      <td>117.0</td>
+      <td>103.0</td>
+    </tr>
+    <tr>
+      <th>travel_cost</th>
+      <td>48.0</td>
+      <td>52.0</td>
+      <td>65.0</td>
+      <td>48.0</td>
+      <td>49.0</td>
+      <td>84.0</td>
+      <td>48.0</td>
+      <td>58.0</td>
+      <td>52.0</td>
+      <td>40.0</td>
+    </tr>
+    <tr>
+      <th>headway</th>
+      <td>120.0</td>
+      <td>20.0</td>
+      <td>0.0</td>
+      <td>30.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>60.0</td>
+      <td>30.0</td>
+      <td>0.0</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>seat_configuration</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Variable-transformations">Variable transformations<a class="anchor-link" href="#Variable-transformations"> </a></h4>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;travel_time_hrs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;travel_time&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">60.0</span>
+<span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;headway_hrs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;headway&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">60.0</span>
+
+<span class="n">long_sm</span><span class="p">[</span><span class="s2">&quot;free_ticket&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(((</span><span class="n">long_sm</span><span class="p">[</span><span class="s2">&quot;GA&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span>
+                            <span class="p">(</span><span class="n">long_sm</span><span class="p">[</span><span class="s2">&quot;WHO&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">))</span> <span class="o">&amp;</span>
+                           <span class="n">long_sm</span><span class="p">[</span><span class="n">custom_alt_id</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="n">long_sm</span><span class="p">[</span><span class="s2">&quot;travel_cost_hundreth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">long_sm</span><span class="p">[</span><span class="s2">&quot;travel_cost&quot;</span><span class="p">]</span> <span class="o">*</span>
+                                    <span class="p">(</span><span class="n">long_sm</span><span class="p">[</span><span class="s2">&quot;free_ticket&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">100.0</span><span class="p">)</span>
+<span class="c1"># Dummy variables</span>
+<span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;single_luggage_piece&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;LUGGAGE&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;multiple_luggage_pieces&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;LUGGAGE&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;regular_class&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;FIRST&#39;</span><span class="p">]</span>
+<span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;train_survey&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">long_sm</span><span class="p">[</span><span class="s1">&#39;SURVEY&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_sm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>custom_id</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>mode_id</th>
+      <td>1.000000</td>
+      <td>2.000000</td>
+      <td>3.00</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>CHOICE</th>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>GROUP</th>
+      <td>2.000000</td>
+      <td>2.000000</td>
+      <td>2.00</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>SURVEY</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>SP</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>PURPOSE</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>FIRST</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>TICKET</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>WHO</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>LUGGAGE</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>AGE</th>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>3.00</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+    </tr>
+    <tr>
+      <th>MALE</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>INCOME</th>
+      <td>2.000000</td>
+      <td>2.000000</td>
+      <td>2.00</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>GA</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>ORIGIN</th>
+      <td>2.000000</td>
+      <td>2.000000</td>
+      <td>2.00</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>DEST</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>travel_time</th>
+      <td>112.000000</td>
+      <td>63.000000</td>
+      <td>117.00</td>
+      <td>103.000000</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>travel_cost</th>
+      <td>48.000000</td>
+      <td>52.000000</td>
+      <td>65.00</td>
+      <td>48.000000</td>
+      <td>49.000000</td>
+    </tr>
+    <tr>
+      <th>headway</th>
+      <td>120.000000</td>
+      <td>20.000000</td>
+      <td>0.00</td>
+      <td>30.000000</td>
+      <td>10.000000</td>
+    </tr>
+    <tr>
+      <th>seat_configuration</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>travel_time_hrs</th>
+      <td>1.866667</td>
+      <td>1.050000</td>
+      <td>1.95</td>
+      <td>1.716667</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>headway_hrs</th>
+      <td>2.000000</td>
+      <td>0.333333</td>
+      <td>0.00</td>
+      <td>0.500000</td>
+      <td>0.166667</td>
+    </tr>
+    <tr>
+      <th>free_ticket</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>travel_cost_hundreth</th>
+      <td>0.480000</td>
+      <td>0.520000</td>
+      <td>0.65</td>
+      <td>0.480000</td>
+      <td>0.490000</td>
+    </tr>
+    <tr>
+      <th>single_luggage_piece</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>multiple_luggage_pieces</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>regular_class</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>train_survey</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.00</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">basic_specf</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+<span class="n">basic_names</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#       - Keys should be variables within the long format dataframe.</span>
+<span class="c1">#         The sole exception to this is the &quot;intercept&quot; key.</span>
+<span class="c1">#       - For the specification dictionary, the values should be lists</span>
+<span class="c1">#         of integers or lists of lists of integers. Within a list, </span>
+<span class="c1">#         or within the inner-most list, the integers should be the </span>
+<span class="c1">#         alternative ID&#39;s of the alternative whose utility specification </span>
+<span class="c1">#         the explanatory variable is entering. Lists of lists denote </span>
+<span class="c1">#         alternatives that will share a common coefficient for the variable</span>
+<span class="c1">#         in question.</span>
+
+<span class="n">basic_specification</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+<span class="n">basic_names</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;intercept&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;intercept&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ASC Train&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;ASC Swissmetro&#39;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;travel_time_hrs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,],</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;travel_time_hrs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Travel Time, units:hrs (Train and Swissmetro)&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;Travel Time, units:hrs (Car)&#39;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;travel_cost_hundreth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;travel_cost_hundreth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Travel Cost * (Annual Pass == 0), units: 0.01 CHF (Train)&#39;</span><span class="p">,</span>
+                                       <span class="s1">&#39;Travel Cost * (Annual Pass == 0), units: 0.01 CHF (Swissmetro)&#39;</span><span class="p">,</span>
+                                       <span class="s1">&#39;Travel Cost, units: 0.01 CHF (Car)&#39;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;headway_hrs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;headway_hrs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Headway, units:hrs, (Train)&quot;</span><span class="p">,</span>
+                              <span class="s2">&quot;Headway, units:hrs, (Swissmetro)&quot;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;seat_configuration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;seat_configuration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Airline Seat Configuration, base=No (Swissmetro)&#39;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;train_survey&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;train_survey&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Surveyed on a Train, base=No, (Train and Swissmetro)&quot;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;regular_class&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;regular_class&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;First Class == False, (Swissmetro)&quot;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;single_luggage_piece&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;single_luggage_piece&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Number of Luggage Pieces == 1, (Car)&quot;</span><span class="p">]</span>
+
+<span class="n">basic_specification</span><span class="p">[</span><span class="s2">&quot;multiple_luggage_pieces&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">basic_names</span><span class="p">[</span><span class="s2">&quot;multiple_luggage_pieces&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Number of Luggage Pieces &gt; 1, (Car)&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">basic_specification</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>OrderedDict([(&#39;intercept&#39;, [1, 2]),
+             (&#39;travel_time_hrs&#39;, [[1, 2], 3]),
+             (&#39;travel_cost_hundreth&#39;, [1, 2, 3]),
+             (&#39;headway_hrs&#39;, [1, 2]),
+             (&#39;seat_configuration&#39;, [2]),
+             (&#39;train_survey&#39;, [[1, 2]]),
+             (&#39;regular_class&#39;, [1]),
+             (&#39;single_luggage_piece&#39;, [3]),
+             (&#39;multiple_luggage_pieces&#39;, [3])])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">basic_names</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>OrderedDict([(&#39;intercept&#39;, [&#39;ASC Train&#39;, &#39;ASC Swissmetro&#39;]),
+             (&#39;travel_time_hrs&#39;,
+              [&#39;Travel Time, units:hrs (Train and Swissmetro)&#39;,
+               &#39;Travel Time, units:hrs (Car)&#39;]),
+             (&#39;travel_cost_hundreth&#39;,
+              [&#39;Travel Cost * (Annual Pass == 0), units: 0.01 CHF (Train)&#39;,
+               &#39;Travel Cost * (Annual Pass == 0), units: 0.01 CHF (Swissmetro)&#39;,
+               &#39;Travel Cost, units: 0.01 CHF (Car)&#39;]),
+             (&#39;headway_hrs&#39;,
+              [&#39;Headway, units:hrs, (Train)&#39;,
+               &#39;Headway, units:hrs, (Swissmetro)&#39;]),
+             (&#39;seat_configuration&#39;,
+              [&#39;Airline Seat Configuration, base=No (Swissmetro)&#39;]),
+             (&#39;train_survey&#39;,
+              [&#39;Surveyed on a Train, base=No, (Train and Swissmetro)&#39;]),
+             (&#39;regular_class&#39;, [&#39;First Class == False, (Swissmetro)&#39;]),
+             (&#39;single_luggage_piece&#39;,
+              [&#39;Number of Luggage Pieces == 1, (Car)&#39;]),
+             (&#39;multiple_luggage_pieces&#39;,
+              [&#39;Number of Luggage Pieces &gt; 1, (Car)&#39;])])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">swissmetro_mnl</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">create_choice_model</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">long_sm</span><span class="p">,</span>
+                                        <span class="n">alt_id_col</span><span class="o">=</span><span class="n">custom_alt_id</span><span class="p">,</span>
+                                        <span class="n">obs_id_col</span><span class="o">=</span><span class="n">obs_id_column</span><span class="p">,</span>
+                                        <span class="n">choice_col</span><span class="o">=</span><span class="n">choice_column</span><span class="p">,</span>
+                                        <span class="n">specification</span><span class="o">=</span><span class="n">basic_specification</span><span class="p">,</span>
+                                        <span class="n">model_type</span><span class="o">=</span><span class="s2">&quot;MNL&quot;</span><span class="p">,</span>
+                                        <span class="n">names</span><span class="o">=</span><span class="n">basic_names</span><span class="p">)</span>
+
+<span class="c1"># Specify the initial values and method for the optimization.</span>
+<span class="n">swissmetro_mnl</span><span class="o">.</span><span class="n">fit_mle</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">14</span><span class="p">))</span>
+
+<span class="c1"># Look at the estimation results</span>
+<span class="n">swissmetro_mnl</span><span class="o">.</span><span class="n">get_statsmodels_summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Log-likelihood at zero: -6,964.6630
+Initial Log-likelihood: -6,964.6630
+Estimation Time for Point Estimation: 0.15 seconds.
+Final log-likelihood: -5,159.2583
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/danph/anaconda3/envs/dev/lib/python3.8/site-packages/scipy/optimize/_minimize.py:522: RuntimeWarning: Method BFGS does not use Hessian information (hess).
+  warn(&#39;Method %s does not use Hessian information (hess).&#39; % method,
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table class="simpletable">
+<caption>Multinomial Logit Model Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>         <td>CHOICE</td>          <th>  No. Observations:  </th>    <td>6,768</td>  
+</tr>
+<tr>
+  <th>Model:</th>         <td>Multinomial Logit Model</td> <th>  Df Residuals:      </th>    <td>6,754</td>  
+</tr>
+<tr>
+  <th>Method:</th>                  <td>MLE</td>           <th>  Df Model:          </th>     <td>14</td>    
+</tr>
+<tr>
+  <th>Date:</th>             <td>Thu, 14 Jan 2021</td>     <th>  Pseudo R-squ.:     </th>    <td>0.259</td>  
+</tr>
+<tr>
+  <th>Time:</th>                 <td>14:46:08</td>         <th>  Pseudo R-bar-squ.: </th>    <td>0.257</td>  
+</tr>
+<tr>
+  <th>AIC:</th>                 <td>10,346.517</td>        <th>  Log-Likelihood:    </th> <td>-5,159.258</td>
+</tr>
+<tr>
+  <th>BIC:</th>                 <td>10,441.996</td>        <th>  LL-Null:           </th> <td>-6,964.663</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+                                 <td></td>                                   <th>coef</th>     <th>std err</th>      <th>z</th>      <th>P>|z|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>ASC Train</th>                                                      <td>   -1.2929</td> <td>    0.146</td> <td>   -8.845</td> <td> 0.000</td> <td>   -1.579</td> <td>   -1.006</td>
+</tr>
+<tr>
+  <th>ASC Swissmetro</th>                                                 <td>   -0.5026</td> <td>    0.116</td> <td>   -4.332</td> <td> 0.000</td> <td>   -0.730</td> <td>   -0.275</td>
+</tr>
+<tr>
+  <th>Travel Time, units:hrs (Train and Swissmetro)</th>                  <td>   -0.6990</td> <td>    0.042</td> <td>  -16.545</td> <td> 0.000</td> <td>   -0.782</td> <td>   -0.616</td>
+</tr>
+<tr>
+  <th>Travel Time, units:hrs (Car)</th>                                   <td>   -0.7230</td> <td>    0.047</td> <td>  -15.340</td> <td> 0.000</td> <td>   -0.815</td> <td>   -0.631</td>
+</tr>
+<tr>
+  <th>Travel Cost * (Annual Pass == 0), units: 0.01 CHF (Train)</th>      <td>   -0.5618</td> <td>    0.094</td> <td>   -6.002</td> <td> 0.000</td> <td>   -0.745</td> <td>   -0.378</td>
+</tr>
+<tr>
+  <th>Travel Cost * (Annual Pass == 0), units: 0.01 CHF (Swissmetro)</th> <td>   -0.2817</td> <td>    0.045</td> <td>   -6.252</td> <td> 0.000</td> <td>   -0.370</td> <td>   -0.193</td>
+</tr>
+<tr>
+  <th>Travel Cost, units: 0.01 CHF (Car)</th>                             <td>   -0.5139</td> <td>    0.104</td> <td>   -4.953</td> <td> 0.000</td> <td>   -0.717</td> <td>   -0.311</td>
+</tr>
+<tr>
+  <th>Headway, units:hrs, (Train)</th>                                    <td>   -0.3143</td> <td>    0.062</td> <td>   -5.063</td> <td> 0.000</td> <td>   -0.436</td> <td>   -0.193</td>
+</tr>
+<tr>
+  <th>Headway, units:hrs, (Swissmetro)</th>                               <td>   -0.3773</td> <td>    0.196</td> <td>   -1.925</td> <td> 0.054</td> <td>   -0.761</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>Airline Seat Configuration, base=No (Swissmetro)</th>               <td>   -0.7825</td> <td>    0.087</td> <td>   -8.970</td> <td> 0.000</td> <td>   -0.953</td> <td>   -0.611</td>
+</tr>
+<tr>
+  <th>Surveyed on a Train, base=No, (Train and Swissmetro)</th>           <td>    2.5425</td> <td>    0.114</td> <td>   22.235</td> <td> 0.000</td> <td>    2.318</td> <td>    2.767</td>
+</tr>
+<tr>
+  <th>First Class == False, (Swissmetro)</th>                             <td>    0.5650</td> <td>    0.077</td> <td>    7.305</td> <td> 0.000</td> <td>    0.413</td> <td>    0.717</td>
+</tr>
+<tr>
+  <th>Number of Luggage Pieces == 1, (Car)</th>                           <td>    0.4228</td> <td>    0.067</td> <td>    6.270</td> <td> 0.000</td> <td>    0.291</td> <td>    0.555</td>
+</tr>
+<tr>
+  <th>Number of Luggage Pieces > 1, (Car)</th>                            <td>    1.4141</td> <td>    0.259</td> <td>    5.461</td> <td> 0.000</td> <td>    0.907</td> <td>    1.922</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">swissmetro_mnl</span><span class="o">.</span><span class="n">print_summaries</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+Number of Parameters                                                     14
+Number of Observations                                                 6768
+Null Log-Likelihood                                                -6964.66
+Fitted Log-Likelihood                                              -5159.26
+Rho-Squared                                                        0.259224
+Rho-Bar-Squared                                                    0.257213
+Estimation Message        Desired error not necessarily achieved due to ...
+dtype: object
+==============================
+                                                    parameters   std_err  \
+ASC Train                                            -1.292943  0.146184   
+ASC Swissmetro                                       -0.502595  0.116010   
+Travel Time, units:hrs (Train and Swissmetro)        -0.699029  0.042250   
+Travel Time, units:hrs (Car)                         -0.722998  0.047130   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...   -0.561769  0.093593   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...   -0.281683  0.045058   
+Travel Cost, units: 0.01 CHF (Car)                   -0.513867  0.103745   
+Headway, units:hrs, (Train)                          -0.314336  0.062085   
+Headway, units:hrs, (Swissmetro)                     -0.377324  0.195969   
+Airline Seat Configuration, base=No (Swissmetro)     -0.782455  0.087232   
+Surveyed on a Train, base=No, (Train and Swissm...    2.542475  0.114347   
+First Class == False, (Swissmetro)                    0.565015  0.077341   
+Number of Luggage Pieces == 1, (Car)                  0.422767  0.067424   
+Number of Luggage Pieces &gt; 1, (Car)                   1.414052  0.258917   
+
+                                                      t_stats       p_values  \
+ASC Train                                           -8.844625   9.183620e-19   
+ASC Swissmetro                                      -4.332359   1.475204e-05   
+Travel Time, units:hrs (Train and Swissmetro)      -16.545035   1.738624e-61   
+Travel Time, units:hrs (Car)                       -15.340414   4.105672e-53   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...  -6.002282   1.945635e-09   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...  -6.251572   4.063405e-10   
+Travel Cost, units: 0.01 CHF (Car)                  -4.953161   7.301745e-07   
+Headway, units:hrs, (Train)                         -5.063008   4.126931e-07   
+Headway, units:hrs, (Swissmetro)                    -1.925430   5.417557e-02   
+Airline Seat Configuration, base=No (Swissmetro)    -8.969775   2.971217e-19   
+Surveyed on a Train, base=No, (Train and Swissm...  22.234822  1.581947e-109   
+First Class == False, (Swissmetro)                   7.305494   2.762506e-13   
+Number of Luggage Pieces == 1, (Car)                 6.270276   3.604088e-10   
+Number of Luggage Pieces &gt; 1, (Car)                  5.461402   4.723879e-08   
+
+                                                    robust_std_err  \
+ASC Train                                                 0.183245   
+ASC Swissmetro                                            0.137088   
+Travel Time, units:hrs (Train and Swissmetro)             0.075838   
+Travel Time, units:hrs (Car)                              0.091977   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...        0.098131   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...        0.044599   
+Travel Cost, units: 0.01 CHF (Car)                        0.150334   
+Headway, units:hrs, (Train)                               0.061170   
+Headway, units:hrs, (Swissmetro)                          0.204305   
+Airline Seat Configuration, base=No (Swissmetro)          0.089759   
+Surveyed on a Train, base=No, (Train and Swissm...        0.122174   
+First Class == False, (Swissmetro)                        0.076562   
+Number of Luggage Pieces == 1, (Car)                      0.068414   
+Number of Luggage Pieces &gt; 1, (Car)                       0.255095   
+
+                                                    robust_t_stats  \
+ASC Train                                                -7.055834   
+ASC Swissmetro                                           -3.666224   
+Travel Time, units:hrs (Train and Swissmetro)            -9.217402   
+Travel Time, units:hrs (Car)                             -7.860671   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...       -5.724657   
+Travel Cost * (Annual Pass == 0), units: 0.01 C...       -6.315884   
+Travel Cost, units: 0.01 CHF (Car)                       -3.418178   
+Headway, units:hrs, (Train)                              -5.138696   
+Headway, units:hrs, (Swissmetro)                         -1.846866   
+Airline Seat Configuration, base=No (Swissmetro)         -8.717304   
+Surveyed on a Train, base=No, (Train and Swissm...       20.810251   
+First Class == False, (Swissmetro)                        7.379864   
+Number of Luggage Pieces == 1, (Car)                      6.179550   
+Number of Luggage Pieces &gt; 1, (Car)                       5.543239   
+
+                                                    robust_p_values  
+ASC Train                                              1.715680e-12  
+ASC Swissmetro                                         2.461587e-04  
+Travel Time, units:hrs (Train and Swissmetro)          3.043870e-20  
+Travel Time, units:hrs (Car)                           3.820826e-15  
+Travel Cost * (Annual Pass == 0), units: 0.01 C...     1.036432e-08  
+Travel Cost * (Annual Pass == 0), units: 0.01 C...     2.686210e-10  
+Travel Cost, units: 0.01 CHF (Car)                     6.304197e-04  
+Headway, units:hrs, (Train)                            2.766511e-07  
+Headway, units:hrs, (Swissmetro)                       6.476660e-02  
+Airline Seat Configuration, base=No (Swissmetro)       2.849049e-18  
+Surveyed on a Train, base=No, (Train and Swissm...     3.495137e-96  
+First Class == False, (Swissmetro)                     1.584517e-13  
+Number of Luggage Pieces == 1, (Car)                   6.428459e-10  
+Number of Luggage Pieces &gt; 1, (Car)                    2.969274e-08  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}

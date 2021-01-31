@@ -100,8 +100,10 @@ class Utility(nn.Module):
         N = len(b)
         # last hidden nodes correspond to b_names
         v = torch.zeros(N,3)
-        v[:,0] = torch.ones(N) * b[:,index["TRAIN_ASC"]] + x["TRAIN"]["TRAIN_TT"]*b[:,index["TRAIN_TT"]] + x["TRAIN"]["TRAIN_HE"]*b[:,index["TRAIN_HE"]] - x["TRAIN"]["TRAIN_CO"]
-        v[:,1] = torch.ones(N) * b[:,index["SM_ASC"]] + x["SM"]["SM_TT"]*b[:,index["SM_TT"]] + x["SM"]["SM_HE"]*b[:,index["SM_HE"]] + x["SM"]["SM_SEATS"]*b[:,index["SM_SEATS"]] - x["SM"]["SM_CO"]
+        v[:,0] = torch.ones(N) * b[:,index["TRAIN_ASC"]] + x["TRAIN"]["TRAIN_TT"]*b[:,index["TRAIN_TT"]] + \
+            x["TRAIN"]["TRAIN_HE"]*b[:,index["TRAIN_HE"]] - x["TRAIN"]["TRAIN_CO"]
+        v[:,1] = torch.ones(N) * b[:,index["SM_ASC"]] + x["SM"]["SM_TT"]*b[:,index["SM_TT"]] + \
+            x["SM"]["SM_HE"]*b[:,index["SM_HE"]] + x["SM"]["SM_SEATS"]*b[:,index["SM_SEATS"]] - x["SM"]["SM_CO"]
         v[:,2] = x["CAR"]["CAR_TT"]*b[:,index["CAR_TT"]] - x["CAR"]["CAR_CO"]
 
         return v

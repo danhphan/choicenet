@@ -6,6 +6,7 @@ index = {"MNL": "03_pytorch_MNL.ipynb",
          "load_model": "03_pytorch_MNL.ipynb",
          "build_model": "03_pytorch_MNL.ipynb",
          "log_loss": "03_pytorch_discrete_choice.ipynb",
+         "say_hello": "04_MNL_from_scratch.ipynb",
          "get_act": "10_tastenet_mnl.ipynb",
          "ChoiceFlex": "10_tastenet_mnl.ipynb",
          "Utility": "10_tastenet_mnl.ipynb",
@@ -19,6 +20,7 @@ modules = ["statsmodels_MNL.py",
            "MNL_swissmetro.py",
            "pytorch_MNL.py",
            "pytorch_discrete_choice.py",
+           "MNL_from_scratch.py",
            "tastenet_mnl.py"]
 
 doc_url = "https://danhphan.github.io/choicenet/"
