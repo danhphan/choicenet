@@ -2,26 +2,24 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"MNL": "03_pytorch_MNL.ipynb",
-         "load_model": "03_pytorch_MNL.ipynb",
-         "build_model": "03_pytorch_MNL.ipynb",
-         "log_loss": "03_pytorch_discrete_choice.ipynb",
-         "say_hello": "04_MNL_from_scratch.ipynb",
-         "get_act": "10_tastenet_mnl.ipynb",
+index = {"get_act": "10_tastenet_mnl.ipynb",
          "ChoiceFlex": "10_tastenet_mnl.ipynb",
          "Utility": "10_tastenet_mnl.ipynb",
          "TasteParams": "10_tastenet_mnl.ipynb",
          "ChoiceDataset": "10_tastenet_mnl.ipynb",
          "getAttribute": "10_tastenet_mnl.ipynb",
-         "selectZ": "10_tastenet_mnl.ipynb"}
+         "selectZ": "10_tastenet_mnl.ipynb",
+         "say_hello": "93_MNL_from_scratch.ipynb",
+         "MNL": "94_pytorch_MNL_example.ipynb",
+         "load_model": "94_pytorch_MNL_example.ipynb",
+         "build_model": "94_pytorch_MNL_example.ipynb"}
 
-modules = ["statsmodels_MNL.py",
+modules = ["MNL_benchmark.py",
+           "tastenet_mnl.py",
            "statsmodels_intro.py",
-           "MNL_swissmetro.py",
-           "pytorch_MNL.py",
-           "pytorch_discrete_choice.py",
+           "statsmodels_MNL.py",
            "MNL_from_scratch.py",
-           "tastenet_mnl.py"]
+           "pytorch_MNL_example.py"]
 
 doc_url = "https://danhphan.github.io/choicenet/"
 
