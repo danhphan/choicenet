@@ -300,7 +300,7 @@ tqdm @ file:///tmp/build/80754af9/tqdm_1602185206534/work
 traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
 tweepy==3.10.0
 twine==3.3.0
-Twisted==20.3.0
+Twisted==24.3.0
 typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1598376058250/work
 ujson @ file:///tmp/build/80754af9/ujson_1602523317881/work
 unicodecsv==0.14.1
