@@ -125,7 +125,7 @@ jupyter-core @ file:///tmp/build/80754af9/jupyter_core_1606148996965/work
 jupyter-highlight-selected-word==0.2.0
 jupyter-latex-envs==1.4.6
 jupyter-nbextensions-configurator==0.4.1
-jupyterlab==2.2.6
+jupyterlab==3.6.8
 jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
 jupyterlab-server @ file:///tmp/build/80754af9/jupyterlab_server_1594164409481/work
 keyring @ file:///tmp/build/80754af9/keyring_1601490835422/work
